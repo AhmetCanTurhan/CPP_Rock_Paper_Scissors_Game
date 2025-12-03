@@ -26,9 +26,9 @@ int main()
             cout << "Enter your move (0 = Rock, 1 = Paper, 2 = Scissors): ";
             cin >> PlayerMoveID;
 
-            if (PlayerMoveID < 0 || PlayerMoveID > 2)
+			if (PlayerMoveID != 0 && PlayerMoveID != 1 && PlayerMoveID != 2)
             {
-                cout << "Invalid move. Please enter 0, 1, or 2." << endl;
+                cout << ">> Invalid move. Please enter 0, 1, or 2.\n" << endl;
             }
             else
             {
