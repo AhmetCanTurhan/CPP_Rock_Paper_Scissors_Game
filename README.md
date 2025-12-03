@@ -23,7 +23,7 @@ A classic **Rock-Paper-Scissors** game implementation running in the Command Lin
     git clone https://github.com/AhmetCanTurhan/CPP_Rock_Paper_Scissors_Game.git
     ```
 2.  Open the project in **Visual Studio** or any C++ compiler.
-3.  Build and Run the `main.cpp` file.
+3.  Build and Run the `RockPaperScissors.cpp` file.
 4.  Follow the on-screen instructions to play against the computer!
 
 ## 📝 Learning Outcomes
