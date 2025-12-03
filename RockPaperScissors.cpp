@@ -13,6 +13,7 @@ struct GameStruct
 
 int main()
 {
+    int choice;
 	cout << "=== Rock, Paper, Scissors Game ===" << endl;
 	cout << "-----------------------------------" << endl;
     srand(time(0));
@@ -56,19 +57,30 @@ int main()
             cout << ">> Computer wins! <<" << endl;
         }
         
-        int choice;
-        cout << "\nPlay again? (0 = No, 1 = Yes): ";
-        cin >> choice;
-        
-        if (choice == 0) {
-			cout << "-----------------------------------" << endl;
+        while (true){
+            cout << "\nPlay again? (0 = No, 1 = Yes): ";
+            cin >> choice;
+
+            if (choice < 0 || choice > 1)
+            {
+                cout << ">> Invalid choice. Please enter 0 or 1." << endl;
+            }
+            else
+            {
+                break;
+            }
+		}
+
+        if (choice == 0)
+        {
+            cout << "-----------------------------------" << endl;
             cout << "Thanks for playing!" << endl;
-			break;
+            break;
         }
-            
-        cout << "-----------------------------------" << endl;
 
     } while (true);
+
+
 
     return 0;
 }
